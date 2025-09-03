@@ -1,18 +1,20 @@
-##  Student Registration System
+# Student Registration System
 
-##  Overview
-The Student Registration System is a web-based application that allows students to register their personal details such as name, student ID, email, and contact number.  
+## Overview
+The Student Registration System is a web-based application that allows students to register their personal details such as Name, Student ID, Email, and Contact Number.  
+
 It provides features to add, edit, delete, and view student records in a user-friendly interface.  
 All data is stored in the browser’s Local Storage, making it available even after refreshing the page.  
-The system is fully responsive and works on mobile, tablet, and desktop devices.
+The system is fully responsive and works on mobile, tablet, and desktop devices.  
+
 ---
 
-##  Features
+## Features
 - Register new students with:
-  - Student Name  
-  - Student ID  
-  - Email ID  
-  - Contact Number  
+  - Student Name
+  - Student ID
+  - Email ID
+  - Contact Number
 - Display all registered students in a structured table  
 - Edit and update existing student records  
 - Delete unwanted student records  
@@ -22,35 +24,31 @@ The system is fully responsive and works on mobile, tablet, and desktop devices.
   - Email → must follow valid email format  
   - Contact Number → minimum 10 digits  
 - Data persistence using Local Storage (data remains after page refresh)  
-- Responsive design that works on mobile, tablet, and desktop  
+- Responsive design (mobile, tablet, desktop)  
 - Dynamic vertical scrollbar when records exceed table height  
-  
 
 ---
 
-##  File Structure
+## File Structure
 Student-Registration-System/
-│
 ├── index.html # HTML structure
-├── style.css # Styling & responsiveness
-├── script.js # JavaScript functionality & local storage
+├── style.css # Styling and responsiveness
+├── script.js # JavaScript functionality and local storage
 └── README.md # Documentation
 
-
 ---
 
-##  How to Run
+## How to Run
 1. Download the project folder.  
-2. Open `index.html` in any browser.  
-3. Start registering students!  
+2. Open index.html in any browser.  
+3. Start registering students.  
 
 ---
 
-
-##  Screenshot!
-[Student Registration Screenshot](SRS.PNG)
+## Screenshot
+![Student Registration Screenshot](SRS.PNG)
 
 ---
 
-##  GitHub Repository
+## GitHub Repository
 [Click here to view the repository](https://github.com/deepikarani2k3/StudentRegistrationSystem)
