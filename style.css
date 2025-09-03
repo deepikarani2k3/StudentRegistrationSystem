@@ -1,0 +1,219 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e3f2fd, #f5f7fa);
+}
+header {
+  background: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Nav Tabs */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  padding: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a90e2;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.tab-btn:hover {
+  color: #357ab7;
+  background: #f1f5ff;
+  border-radius: 8px;
+}
+.tab-btn.active {
+  color: #ffffff;
+  background: #4a90e2;
+  border-radius: 8px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Section styling */
+.register-section, .registered-section {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.register-section h2, .registered-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4a90e2;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 0.5rem;
+}
+
+/* Form styling */
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+input {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74,144,226,0.5);
+  outline: none;
+}
+button {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #4a90e2;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+button:hover {
+  background: #357ab7;
+  transform: translateY(-2px);
+}
+
+/* Table styling */
+.records {
+  max-height: 300px;
+  overflow-y: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+}
+th {
+  background: #f0f0f0;
+}
+tr:hover {
+  background: #f9fbff;
+  transition: background 0.3s ease;
+}
+
+/* Action icons */
+.actions i {
+  cursor: pointer;
+  margin: 0 5px;
+  color: #4a90e2;
+  transition: 0.3s;
+}
+.actions i.fa-pen-to-square:hover {
+  color: #28a745;  
+  transform: scale(1.2);
+}
+.actions i.fa-trash:hover {
+  color: #dc3545;   
+  transform: scale(1.2);
+}
+
+/* Sort controls */
+.sort-controls {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sort-controls label {
+  font-weight: 600;
+}
+.sort-controls select, 
+.sort-controls button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sort-controls button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+}
+.sort-controls button:hover {
+  background: #357ab7;
+  transform: translateY(-2px);
+}
+
+/* Notification */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4a90e2;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+}
+
+/* Responsive */
+
+@media (max-width: 640px) {
+  header h1 { font-size: 1.5rem; }
+  header p { font-size: 0.9rem; }
+  .tab-btn { font-size: 0.9rem; padding: 0.6rem 1rem; }
+  .container { padding: 0.5rem; }
+  form { grid-template-columns: 1fr; }
+  th, td { font-size: 0.85rem; padding: 0.6rem; }
+}
+
+@media (max-width: 900px) and (min-width: 641px) {
+  header h1 { font-size: 1.8rem; }
+  header p { font-size: 1rem; }
+  .tab-btn { font-size: 1rem; padding: 0.7rem 1.2rem; }
+  .container { padding: 0.8rem; }
+  form { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  th, td { font-size: 0.9rem; }
+}
+
+@media (min-width: 901px) {
+  header h1 { font-size: 2.2rem; }
+  header p { font-size: 1.1rem; }
+  .tab-btn { font-size: 1rem; }
+}
