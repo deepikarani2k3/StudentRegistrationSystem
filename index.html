@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <meta name="description"
+        content="A simple Student Registration System to register, edit, sort, and manage student details with local storage support.">
+    <meta name="keywords"
+        content="Student Registration, Student Management, HTML CSS JS Project, LocalStorage, CRUD System">
+    <meta name="author" content="Deepika Rani">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><i class="fa-solid fa-user-graduate"></i> Student Portal 360°</h1>
+        <p>Easy student registration, record management, and quick access — all in one place.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Register Student Section -->
+        <section class="register-section">
+            <h2><i class="fa-solid fa-user-plus"></i> Register Student</h2>
+            <form id="studentForm">
+                <input type="text" id="name" placeholder="Student Name" required>
+                <input type="number" id="studentId" placeholder="Student ID" required>
+                <input type="email" id="email" placeholder="Email ID" required>
+                <input type="tel" id="contact" placeholder="Contact Number" required>
+                <button type="submit"><i class="fa-solid fa-plus"></i> Add Student</button>
+            </form>
+        </section>
+
+        <!-- Registered Students Section -->
+        <section class="registered-section">
+            <h2><i class="fa-solid fa-users"></i> Registered Students</h2>
+
+            <!-- Sorting Controls -->
+            <div class="sort-controls">
+                <label for="sortBy">Sort by:</label>
+                <select id="sortBy">
+                    <option value="id">Student ID</option>
+                    <option value="name">Name</option>
+                </select>
+                <button id="sortAsc"><i class="fa-solid fa-arrow-up"></i> Asc</button>
+                <button id="sortDesc"><i class="fa-solid fa-arrow-down"></i> Desc</button>
+            </div>
+
+            <div class="records">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="notification" id="notification"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
