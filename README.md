@@ -1,6 +1,6 @@
-#  Student Registration System
+##  Student Registration System
 
-#  Overview
+##  Overview
 The Student Registration System is a web-based application that allows students to register their personal details such as name, student ID, email, and contact number.  
 It provides features to add, edit, delete, and view student records in a user-friendly interface.  
 All data is stored in the browser’s Local Storage, making it available even after refreshing the page.  
