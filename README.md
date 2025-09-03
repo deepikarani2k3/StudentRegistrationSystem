@@ -30,11 +30,13 @@ The system is fully responsive and works on mobile, tablet, and desktop devices.
 ---
 
 ## File Structure
+```
 Student-Registration-System/
 ├── index.html # HTML structure
 ├── style.css # Styling and responsiveness
 ├── script.js # JavaScript functionality and local storage
 └── README.md # Documentation
+```
 
 ---
 
